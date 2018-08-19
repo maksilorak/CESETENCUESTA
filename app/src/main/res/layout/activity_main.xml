@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:background="@color/verde_ceset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@color/verde_ceset"
+            android:text="@string/evaluacion"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@color/verde_ceset"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/verde_ceset"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:text="@string/texto_evaluacion"
+            android:textSize="28sp"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/verde_ceset"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:text="@string/seleccione_servicio"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_weight="3.5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/egresados"
+            android:elevation="10dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/egresados"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/continua"
+            android:layout_margin="10dp"
+            android:src="@drawable/educacion"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/mercadeo"
+            android:layout_margin="10dp"
+            android:src="@drawable/mercadeo"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/emprendimiento"
+            android:layout_margin="10dp"
+            android:src="@drawable/emprendimiento"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="1dp"
+        android:paddingLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="3.5">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/asesoria"
+            android:layout_margin="10dp"
+            android:src="@drawable/asesoria"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/practicas"
+
+            android:layout_margin="10dp"
+            android:src="@drawable/practicas"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:elevation="10dp"
+            android:id="@+id/iso"
+            android:layout_margin="10dp"
+            android:src="@drawable/iso"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">CESET ENCUESTA</string>
+    <string name="BienvenidoCeset">BIENVENIDO A LA ENCUESTA DE SATISFACION DEL CESET UNIVERSIDAD DE ANTIOQUIA</string>
+
+
+    <string name="evaluacion">EVALUACIÓN DE SERVICIOS CESET</string>
+    <string name="texto_evaluacion">Para la Universidad de Antioquia es muy importante conocer la percepción que usted tuvo acerca de los servicios prestados, con el fin de identificar oportunidades de mejoramiento sobre los mismos y en procura de su satisfacción,como parte de nuestro compromiso con la calidad.
+    </string>
+    <string name="egresados">EGRESADOS</string>
+    <string name="emprendimiento">EMPRENDIMIENTO</string>
+    <string name="practicas">PRÁCTICA ACADÉMICA</string>
+    <string name="educacion_continua">EDUCACIÓN CONTINUA</string>
+    <string name="asesoria">ASESORÍA Y CONSULTORÍA</string>
+    <string name="comercial">COMERCIAL</string>
+    <string name="logistica">LOGÍSTICA</string>
+    <string name="seleccione_servicio">Seleccione el Servicio a Evaluar</string>
+    <string name="pregunta_uno">Con respecto a la información y asesoría recibida sobre el trámite o servicio, usted quedó:</string>
+    <string name="muy_satisfecho">Muy Satisfecho</string>
+    <string name="satisfecho">Satisfecho</string>
+    <string name="Insatisfecho">Insatisfecho</string>
+    <string name="muy_insatisfecho">Muy Insatisfecho</string>
+    <string name="pregunta_dos">Con relación a la facilidad para contactar al personal y disponibilidad de los mecanismos de acceso al servicio (portal, teléfono, correo electrónico, helpdesk o puntos de atención ), usted quedó:</string>
+    <string name="pregunta_tres">Con relación a la oportunidad como el tiempo transcurrido entre la solicitud del servicio y la prestación del mismo usted quedó:</string>
+    <string name="pregunta_cuatro">Sobre la pertinencia, entendida como la congruencia entre lo solicitado y lo entregado en la prestación del servicio, usted quedó:</string>
+    <string name="atras">Anterior</string>
+    <string name="adelante">Siguiente</string>
+    <string name="pregunta_cinco">Frente a la atención del personal que lo atendió en términos de cortesía, respeto y amabilidad, usted quedó:</string>
+    <string name="terminar">Terminar</string>
+    <string name="seis">6</string>
+    <string name="dos">2</string>
+    <string name="tres">3</string>
+    <string name="cuatro">4</string>
+    <string name="cinco">5</string>
+    <string name="dieciseis">16%</string>
+    <string name="trestres">33%</string>
+    <string name="progreso">Progreso de la Evaluación</string>
+    <string name="uno">1</string>
+    <string name="two">Dos</string>
+    <string name="three">Tres</string>
+    <string name="four">Cuatro</string>
+    <string name="five">Cinco</string>
+    <string name="unidad_en_evaluacion">Se esta evaluando la Unidad</string>
+    <string name="bienvenida">Bienvenido al CESET Universidad de Antioquia</string>
+    <string name="evaluar_ceset">SI</string>
+    <string name="desea_evaluar">Quieres Evaluar Nuestros Servicios. Haz Click</string>
+    <string name="exito">Gracias por evaluar nuestros servicios.</string>
+</resources>
