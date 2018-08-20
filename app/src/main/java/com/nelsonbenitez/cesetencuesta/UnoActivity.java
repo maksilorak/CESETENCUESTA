@@ -39,16 +39,12 @@ public class UnoActivity extends AppCompatActivity {
         estadoEncuenta= (RingProgressBar) findViewById(R.id.progress_bar_1) ;
         estadoEncuenta.setProgress(progress);
 
+        //Toast.makeText(this, "Se recibe "+calificacion_uno+" en UNO", Toast.LENGTH_SHORT).show();
 
 
         addListenerOnButton();
+        seleccionarOpcion(calificacion_uno);
 
-        if (!calificacion_uno.isEmpty()){
-            calificacion=calificacion_uno;
-
-            progress=20;
-            seleccionarOpcion(calificacion_uno);
-        }
 
     }
 
@@ -56,26 +52,43 @@ public class UnoActivity extends AppCompatActivity {
         switch (opcion_seleccionada){
 
             case "Muy Satisfecho":
-                muy_satisfecho.setAnimation("check_animation.json");
+                muy_satisfecho.setAnimation("success.json");
                 muy_satisfecho.playAnimation();
+                calificacionrealizada=true;
+                calificacion=calificacion_uno;
                 break;
 
             case "Satisfecho":
-                satisfecho.setAnimation("check_animation.json");
+                satisfecho.setAnimation("check_mark.json");
                 satisfecho.playAnimation();
+                calificacionrealizada=true;
+                calificacion=calificacion_uno;
                 break;
 
 
             case "Insatisfecho":
-                insatisfecho.setAnimation("check_animation.json");
+                insatisfecho.setAnimation("check.json");
+                insatisfecho.setScaleY((float) 1.5);
+                insatisfecho.setScaleX((float) 1.5);
+                insatisfecho.setRepeatCount(20000);
                 insatisfecho.playAnimation();
+                calificacionrealizada=true;
+                calificacion=calificacion_uno;
+
                 break;
 
             case "Muy Insatisfecho":
                 muy_insatisfecho.setAnimation("check_animation.json");
                 muy_insatisfecho.playAnimation();
+                calificacionrealizada=true;
+                calificacion=calificacion_uno;
                 break;
 
+
+            default:
+                calificacionrealizada=false;
+                calificacion=opcion_seleccionada;
+                break;
         }
     }
 
@@ -87,6 +100,8 @@ public class UnoActivity extends AppCompatActivity {
         muy_insatisfecho = (LottieAnimationView) findViewById(R.id.muy_insatisfecho);
         adelante = (LottieAnimationView) findViewById(R.id.adelante);
         atras = (LottieAnimationView) findViewById(R.id.atras);
+        insatisfecho.setRepeatCount(20000);
+
 
         adelante.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -127,12 +142,24 @@ public class UnoActivity extends AppCompatActivity {
         satisfecho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                satisfecho.setAnimation("check_animation.json");
+                satisfecho.setAnimation("check_mark.json");
                 satisfecho.playAnimation();
                 muy_satisfecho.setAnimation("laugh.json");
                 muy_satisfecho.playAnimation();
-                insatisfecho.setAnimation("wow.json");
+
+                insatisfecho.setRepeatCount(0);
+                insatisfecho.cancelAnimation();
+                insatisfecho.setAnimation("decline_arrows.json");
+                //insatisfecho.playAnimation();
+                insatisfecho.setScaleY((float) 4.8);
+                insatisfecho.setScaleX((float) 4.8);
+                insatisfecho.setPadding(0,50,0,5);
+                //insatisfecho.cancelAnimation();
+                insatisfecho.setRepeatCount(20000);
+                insatisfecho.setAnimation("not_found.json");
+                //insatisfecho.resumeAnimation();
                 insatisfecho.playAnimation();
+
                 muy_insatisfecho.setAnimation("angry_emoji.json");
                 muy_insatisfecho.playAnimation();
                 progress=20;
@@ -148,10 +175,23 @@ public class UnoActivity extends AppCompatActivity {
             public void onClick(View v) {
                 satisfecho.setAnimation("happy.json");
                 satisfecho.playAnimation();
-                muy_satisfecho.setAnimation("check_animation.json");
+                muy_satisfecho.setAnimation("success.json");
                 muy_satisfecho.playAnimation();
-                insatisfecho.setAnimation("wow.json");
+
+                insatisfecho.setRepeatCount(0);
+                insatisfecho.cancelAnimation();
+                insatisfecho.setAnimation("decline_arrows.json");
+                //insatisfecho.playAnimation();
+                insatisfecho.setScaleY((float) 4.8);
+                insatisfecho.setScaleX((float) 4.8);
+                insatisfecho.setPadding(0,50,0,5);
+                //insatisfecho.cancelAnimation();
+                insatisfecho.setRepeatCount(20000);
+                insatisfecho.setAnimation("not_found.json");
+                //insatisfecho.resumeAnimation();
                 insatisfecho.playAnimation();
+
+
                 muy_insatisfecho.setAnimation("angry_emoji.json");
                 muy_insatisfecho.playAnimation();
                 progress=20;
@@ -165,12 +205,20 @@ public class UnoActivity extends AppCompatActivity {
         insatisfecho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 satisfecho.setAnimation("happy.json");
                 satisfecho.playAnimation();
                 muy_satisfecho.setAnimation("laugh.json");
                 muy_satisfecho.playAnimation();
-                insatisfecho.setAnimation("check_animation.json");
+
+
+                insatisfecho.setPadding(0,25,0,15);
+                insatisfecho.setScaleY((float) 1.5);
+                insatisfecho.setScaleX((float) 1.5);
+                insatisfecho.setAnimation("check.json");
                 insatisfecho.playAnimation();
+
+
                 muy_insatisfecho.setAnimation("angry_emoji.json");
                 muy_insatisfecho.playAnimation();
                 progress=20;
@@ -184,14 +232,33 @@ public class UnoActivity extends AppCompatActivity {
         muy_insatisfecho.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                insatisfecho.setRepeatCount(0);
+                insatisfecho.cancelAnimation();
+                insatisfecho.setAnimation("decline_arrows.json");
+                //insatisfecho.playAnimation();
+                insatisfecho.setScaleY((float) 4.8);
+                insatisfecho.setScaleX((float) 4.8);
+                insatisfecho.setPadding(0,50,0,5);
+                //insatisfecho.cancelAnimation();
+                insatisfecho.setRepeatCount(20000);
+                insatisfecho.setAnimation("not_found.json");
+                //insatisfecho.resumeAnimation();
+                insatisfecho.playAnimation();
+
+
                 satisfecho.setAnimation("happy.json");
                 satisfecho.playAnimation();
                 muy_satisfecho.setAnimation("laugh.json");
                 muy_satisfecho.playAnimation();
-                insatisfecho.setAnimation("wow.json");
-                insatisfecho.playAnimation();
+
+
+                muy_insatisfecho.setScaleX(1);
+                muy_insatisfecho.setScaleY(1);
+                //muy_insatisfecho.setPadding(0,100,0,5);
                 muy_insatisfecho.setAnimation("check_animation.json");
                 muy_insatisfecho.playAnimation();
+
+
                 progress=20;
                 calificacion="Muy Insatisfecho";
                 calificacionrealizada=true;
