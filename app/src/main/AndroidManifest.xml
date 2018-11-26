@@ -18,12 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".UnoActivity" />
-        <activity android:name=".DosActivity" />
-        <activity android:name=".TresActivity" />
-        <activity android:name=".CuatroActivity" />
-        <activity android:name=".CincoActivity" />
+        <activity android:name=".MainActivity" android:screenOrientation="landscape" />
+        <activity android:name=".UnoActivity" android:screenOrientation="landscape" />
+        <activity android:name=".DosActivity" android:screenOrientation="landscape" />
+        <activity android:name=".TresActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".CuatroActivity" android:screenOrientation="landscape"/>
+        <activity android:name=".CincoActivity" android:screenOrientation="landscape"/>
         <activity android:name=".ExitoActivity"></activity>
     </application>
 

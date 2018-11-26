@@ -1,0 +1,21 @@
+{
+  "user_account_settings" : {
+    "Vvpo8W2bMfYzmuT7nKlWqTrSVv42" : {
+      "description" : "I live in Medellin, CO",
+      "display_name" : "Nelson Benitez",
+      "followers" : 0,
+      "posts" : 0,
+      "profile_photo" : "none",
+      "username" : "nelson.benitez",
+      "website" : "bbc.com"
+    }
+  },
+  "users" : {
+    "Vvpo8W2bMfYzmuT7nKlWqTrSVv42" : {
+      "email" : "nelson.benitez@udea.edu.co",
+      "phone_number" : 1,
+      "user_id" : "Vvpo8W2bMfYzmuT7nKlWqTrSVv42",
+      "user_name" : "nelson.benitez"
+    }
+  }
+}
